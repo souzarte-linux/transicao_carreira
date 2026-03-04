@@ -1,3 +1,6 @@
+# DESAFIO 2 – Classificação de Risco Financeiro
+
+
 faturamento_dia = int(input("Qual é o faturamento do dia? "))
 
 custo_combustivel = int(input("Qual o custo do combustível hoje? "))
