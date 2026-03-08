@@ -1,4 +1,4 @@
-print ("Olá, bom dia! Seja bem-vindo(a) ao controle de Fluxo de Caixa! \nResponda as perguntas abaixo.")
+print ("\nOlá, bom dia! Seja bem-vindo(a) ao controle de Fluxo de Caixa! \nResponda as perguntas abaixo.")
 
 convocado = input ("Hoje você foi convocado para trabalhar? (sim/não)").lower()
 
@@ -16,6 +16,9 @@ if convocado.lower() not in ("sim", "s"):
     print("Que pena, hoje não tem trabalho! Aproveite seu dia!")
 
 else:
+    if quantPacotes > 0:
+    valor_pacote = valor_total_dia / quantPacotes
+
     if quantPacotes > 131:
         bonus_quant_pacotes = 50
     elif quantPacotes >= 121:
@@ -25,8 +28,8 @@ else:
 
     valor_total_dia = (valor_diaria + bonus_dia)
 
-    valor_pacote = valor_total_dia / quantPacotes
-
     valor_total_dia_com_bonus = valor_total_dia + bonus_quant_pacotes
 
-    print(f"\nHoje sua diária foi de R$ {valor_total_dia_com_bonus}, sendo que foi entregue {quantPacotes} pacotes.\nO valor pago por pacote foi de R$ {valor_pacote:.2f}.")
+    valor_pacote = valor_total_dia_com_bonus / quantPacotes 
+
+    print(f"\nHoje sua diária foi de R$ {valor_total_dia_com_bonus},\nsendo que foi entregue {quantPacotes} pacotes.\nO valor pago por pacote foi de R$ {valor_pacote:.2f}.\n")
