@@ -1,2 +1,0 @@
-1. O Título "Tamanho do seu poster" dever ser em maiúsculo e centralizado
-2. Quando for escolhida a opção "Escolher local diferente" o destino deve ficar visível seja como uma label ou outra forma que o usuário veja após selecionar para ter a certeza que escolheu o local correto. 
